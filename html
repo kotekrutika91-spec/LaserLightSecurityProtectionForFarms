@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laser Light Security System – Farmer Survey Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>🔐 Laser Light Security System – Farmer Survey Form</h1>
+        <p>Purpose: To understand the interest, awareness, and potential benefits of using laser light-based protection systems for farms against animal intrusion and theft.</p>
+    </header>
+
+    <section class="info-section">
+        <h2>Why Laser Light Security?</h2>
+        <p>Laser light security systems provide an innovative solution to protect your farm from animal intrusions and theft. They are effective, non-invasive, and environmentally friendly.</p>
+        <img src="https://example.com/laser-security.jpg" alt="Laser Security System" class="info-image">
+    </section>
+
+    <form id="surveyForm" action="https://formspree.io/f/xkgzvgao" method="POST"> <!-- Updated form action -->
+        <section>
+            <h2>👤 Farmer Information</h2>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" required>
+
+            <label for="location">Village / Taluka / District:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label>Type of Farming You Do:</label>
+            <select name="farmingType" required>
+                <option value="crop">Crop Farming</option>
+                <option value="horticulture">Horticulture</option>
+                <option value="organic">Organic Farming</option>
+                <option value="animal">Animal Husbandry</option>
+                <option value="other">Other (please specify)</option>
+            </select>
+            <input type="text" name="otherFarmingType" placeholder="Specify if other">
+        </section>
+
+        <section>
+            <h2>🌾 Farm Details</h2>
+            <label for="farmSize">Farm Size (in acres/hectares):</label>
+            <input type="text" id="farmSize" name="farmSize" required>
+
+            <label>Do you currently face problems with:</label>
+            <input type="checkbox" name="problems[]" value="wildAnimal"> Wild animal attacks
+            <input type="checkbox" name="problems[]" value="cropTheft"> Crop theft
+            <input type="checkbox" name="problems[]" value="both"> Both
+            <input type="checkbox" name="problems[]" value="none"> None
+
+            <label>How frequently do such issues occur?</label>
+            <select name="frequency" required>
+                <option value="rarely">Rarely</option>
+                <option value="occasionally">Occasionally</option>
+                <option value="weekly">Weekly</option>
+                <option value="daily">Daily</option>
+            </select>
+
+            <label>Which animals commonly intrude on your farm?</label>
+            <input type="checkbox" name="intrudingAnimals[]" value="wildBoars"> Wild boars
+            <input type="checkbox" name="intrudingAnimals[]" value="monkeys"> Monkeys
+            <input type="checkbox" name="intrudingAnimals[]" value="deer"> Deer
+            <input type="checkbox" name="intrudingAnimals[]" value="cattle"> Cattle
+            <input type="text" name="otherAnimals" placeholder="Others (mention)">
+        </section>
+
+        <section>
+            <h2>💡 Awareness & Interest in Laser Protection</h2>
+            <label>Have you heard of laser light security systems for farms?</label>
+            <input type="radio" name="heardOfLaser" value="yes" required> Yes
+            <input type="radio" name="heardOfLaser" value="no"> No
+
+            <label>Would you be interested in using such a system to protect your farm?</label>
+            <input type="radio" name="interest" value="yes" required> Yes
+            <input type="radio" name="interest" value="maybe"> Maybe
+            <input type="radio" name="interest" value="no"> No
+
+            <label>How much are you willing to invest in a farm security system?</label>
+            <select name="investment" required>
+                <option value="below5000">Below ₹5,000</option>
+                <option value="5000-10000">₹5,000–₹10,000</option>
+                <option value="10000-20000">₹10,000–₹20,000</option>
+                <option value="moreThan20000">More than ₹20,000</option>
+            </select>
+        </section>
+
+        <section>
+            <h2>🔧 Current Measures</h2>
+            <label>What measures are you currently using to protect your farm?</label>
+            <input type="checkbox" name="currentMeasures[]" value="fencing"> Fencing
+            <input type="checkbox" name="currentMeasures[]" value="nightWatchman"> Night Watchman
+            <input type="checkbox" name="currentMeasures[]" value="firecrackers"> Firecrackers / Sound Systems
+            <input type="checkbox" name="currentMeasures[]" value="electricFencing"> Electric Fencing
+            <input type="checkbox" name="currentMeasures[]" value="none"> None
+
+            <label>Are you satisfied with your current farm protection method?</label>
+            <input type="radio" name="satisfaction" value="yes" required> Yes
+            <input type="radio" name="satisfaction" value="partially"> Partially
+            <input type="radio" name="satisfaction" value="no"> No
+        </section>
+
+        <section>
+            <h2>📣 Feedback</h2>
+            <label>Would you like a free demo of the laser light protection system?</label>
+            <input type="radio" name="demo" value="yes" required> Yes
+            <input type="radio" name="demo" value="no"> No
+
+            <label>Any suggestions or concerns you want to share?</label>
+            <textarea name="feedback" rows="4" placeholder="Open text"></textarea>
+        </section>
+
+        <footer>
+            <p>Community Engagement Program | Second Year (IT) | Pravara Rural Engineering College, Loni</p>
+            <p>Under The Guidance of Mr. D.B. Ghorpade</p>
+            <p>Team Members: KRUTIKA KOTE, SANSKRUTI KADASKAR, ADITYA KALE</p>
+            <button type="submit">Submit</button>
+        </footer>
+    </form>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file for interactivity -->
+</body>
+</html>
